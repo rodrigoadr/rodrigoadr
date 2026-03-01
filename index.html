@@ -187,11 +187,13 @@
       <!-- Right side: lang, CV, hamburger -->
       <div class="flex items-center gap-2.5">
         <a href="index_pt.html"
+           onclick="gtag('event','click',{event_category:'nav',event_label:'lang_switch_pt'})"
            class="text-xs font-semibold px-4 py-2 rounded-full border border-slate-700 text-slate-400
                   hover:border-sky-500/60 hover:text-sky-400 transition-all duration-150">
           PT
         </a>
         <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'nav',event_label:'cv_download_nav'})"
            class="hidden sm:inline-flex text-xs font-semibold px-4 py-2 rounded-full bg-sky-500 text-white
                   hover:bg-sky-400 transition-all duration-150 shadow-lg shadow-sky-500/20">
           Download&nbsp;CV
@@ -220,6 +222,7 @@
         <a href="#contact"    class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
         <div class="border-t border-slate-800 mt-3 pt-3">
           <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+             onclick="gtag('event','click',{event_category:'nav',event_label:'cv_download_mobile'})"
              class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400
                     text-white font-semibold text-sm transition-all duration-150">
             Download CV
@@ -332,6 +335,7 @@
           <!-- Primary CTAs -->
           <div class="fade-up-5 flex flex-wrap gap-3">
           <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+             onclick="gtag('event','click',{event_category:'hero_cta',event_label:'cv_en'})"
              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400
                     text-white font-semibold text-sm transition-all duration-150
                     shadow-xl shadow-sky-500/20 hover:shadow-sky-400/30">
@@ -343,6 +347,7 @@
             </svg>
           </a>
           <a href="CV_Rodrigo_Rocha_PT.html" target="_blank" rel="noopener"
+             onclick="gtag('event','click',{event_category:'hero_cta',event_label:'cv_pt'})"
              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-700
                     hover:border-sky-500/60 text-slate-300 hover:text-sky-400 font-semibold text-sm
                     transition-all duration-150">
@@ -354,6 +359,7 @@
             </svg>
           </a>
           <a href="https://www.linkedin.com/in/rodrocha" target="_blank" rel="noopener"
+             onclick="gtag('event','click',{event_category:'hero_cta',event_label:'linkedin'})"
              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-700
                     hover:border-blue-500/60 text-slate-300 hover:text-blue-400 font-semibold text-sm
                     transition-all duration-150">
@@ -1108,6 +1114,7 @@
         </a>
 
         <a href="https://www.linkedin.com/in/rodrocha" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'contact',event_label:'linkedin'})"
            class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-700
                   hover:border-blue-500/60 text-slate-300 hover:text-blue-400 font-semibold text-sm
                   transition-all duration-150">
@@ -1123,6 +1130,7 @@
         </a>
 
         <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+           onclick="gtag('event','click',{event_category:'contact',event_label:'cv_download'})"
            class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-700
                   hover:border-sky-500/60 text-slate-300 hover:text-sky-400 font-semibold text-sm
                   transition-all duration-150">
@@ -1203,6 +1211,22 @@
       h2.style.opacity   = '1';
       h3.style.transform = '';
     }
+
+    // Section view tracking via Intersection Observer
+    const _seen = new Set();
+    const _observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !_seen.has(e.target.id)) {
+          _seen.add(e.target.id);
+          gtag('event', 'section_view', {
+            event_category: 'engagement',
+            event_label: e.target.id
+          });
+        }
+      });
+    }, { threshold: 0.25 });
+    ['hero','impact','about','experience','stack','education','contact']
+      .forEach(id => { const el = document.getElementById(id); if (el) _observer.observe(el); });
   </script>
 
 
