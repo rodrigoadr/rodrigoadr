@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rodrigo Albuquerque da Rocha — Data Product Specialist with 20+ years driving data-driven transformation at scale. GCP, BigQuery, ML, DataOps." />
+  <meta name="keywords" content="Data Product Specialist, BigQuery, GCP, Machine Learning, Business Intelligence, DataOps, MLOps, Tableau, Looker" />
+  <meta name="author" content="Rodrigo Albuquerque da Rocha" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rodrigoadr.github.io/" />
+  <meta property="og:title" content="Rodrigo Albuquerque da Rocha — Data Product Specialist" />
+  <meta property="og:description" content="20+ years transforming data into business value. 20 TB migrated, 100K employees impacted, 500+ franchisees served." />
+
+  <title>Rodrigo Albuquerque da Rocha — Data Product Specialist</title>
+
+  <!-- ═══ Tailwind CSS via CDN ═══ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ═══ Inter — primary typeface ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- ═══ Tailwind config ═══ -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] },
+          colors: {
+            brand: {
+              DEFAULT: '#38bdf8',
+              dim:    '#0ea5e9',
+              muted:  '#7dd3fc',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- ═══ Micro-styles — only what Tailwind can't do inline ═══ -->
+  <style>
+    /* ── Global ──────────────────────────────────────── */
+    html { background-color: #020617; color-scheme: dark; }
+
+    /* ── Gradient text ───────────────────────────────── */
+    .text-gradient {
+      background: linear-gradient(135deg, #38bdf8 0%, #818cf8 60%, #a78bfa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .text-gradient-subtle {
+      background: linear-gradient(135deg, #7dd3fc 0%, #c4b5fd 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ── Hero background: glow + dot grid ───────────── */
+    .hero-bg {
+      background:
+        radial-gradient(ellipse at 12% 60%, rgba(56, 189, 248, 0.09) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 15%, rgba(129, 140, 248, 0.09) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 105%, rgba(56, 189, 248, 0.05) 0%, transparent 45%),
+        #020617;
+    }
+    .hero-dots {
+      background-image: radial-gradient(circle, rgba(148,163,184,0.065) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+
+    /* ── Hero stats card (glassmorphism) ─────────────── */
+    .hero-card {
+      background: linear-gradient(145deg, rgba(15,23,42,0.85) 0%, rgba(15,23,42,0.55) 100%);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    /* ── Card lift on hover ───────────────────────────── */
+    .card-lift {
+      transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+    }
+    .card-lift:hover {
+      transform: translateY(-3px);
+      border-color: rgba(56, 189, 248, 0.35);
+      box-shadow: 0 8px 32px -8px rgba(56, 189, 248, 0.12);
+    }
+
+    /* ── Nav blur ─────────────────────────────────────── */
+    .nav-blur {
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    /* ── Tabular numbers ─────────────────────────────── */
+    .num { font-variant-numeric: tabular-nums; letter-spacing: -0.04em; }
+
+    /* ── Scrollbar ───────────────────────────────────── */
+    ::-webkit-scrollbar               { width: 5px; }
+    ::-webkit-scrollbar-track         { background: #020617; }
+    ::-webkit-scrollbar-thumb         { background: #334155; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover   { background: #38bdf8; }
+
+    /* ── Animations ──────────────────────────────────── */
+    @keyframes pulse-dot    { 0%,100% { opacity:1; }  50% { opacity:.4; } }
+    @keyframes scroll-cue   { 0%,100% { transform: translateY(0); opacity:.7; } 55% { transform: translateY(7px); opacity:1; } }
+    @keyframes fade-up      { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+    .pulse-dot   { animation: pulse-dot  2s   ease-in-out infinite; }
+    .scroll-cue  { animation: scroll-cue 2.2s ease-in-out infinite; }
+    .fade-up-1   { animation: fade-up .55s ease both; }
+    .fade-up-2   { animation: fade-up .55s .12s ease both; }
+    .fade-up-3   { animation: fade-up .55s .24s ease both; }
+    .fade-up-4   { animation: fade-up .55s .36s ease both; }
+    .fade-up-5   { animation: fade-up .55s .48s ease both; }
+
+    /* ── Name underline accent ───────────────────────── */
+    .name-accent {
+      position: relative;
+    }
+    .name-accent::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: -4px;
+      width: 100%; height: 2px;
+      background: linear-gradient(90deg, #38bdf8, #818cf8, transparent);
+      border-radius: 2px;
+    }
+
+    /* ── Mobile nav links ──────────────────────── */
+    .mobile-nav-link {
+      display: block;
+      padding: 0.625rem 0.75rem;
+      border-radius: 0.5rem;
+      font-size: 0.9375rem;
+      font-weight: 500;
+      color: #94a3b8;
+      transition: background-color 0.15s, color 0.15s;
+    }
+    .mobile-nav-link:hover {
+      background-color: rgba(15, 23, 42, 0.6);
+      color: #38bdf8;
+    }
+  </style>
+</head>
+
+<!-- ╔══════════════════════════════════════════════════════════════╗
+     ║  BODY                                                        ║
+     ╚══════════════════════════════════════════════════════════════╝ -->
+<body class="font-sans text-slate-200 bg-slate-950 antialiased">
+
+
+  <!-- ══════════════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════════════ -->
+  <nav class="fixed top-0 left-0 right-0 z-50 nav-blur bg-slate-950/75 border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+
+      <!-- Monogram -->
+      <a href="#hero"
+         class="text-xs font-bold tracking-[.25em] text-slate-500 uppercase hover:text-sky-400 transition-colors duration-200">
+        RAR
+      </a>
+
+      <!-- Links — hidden on mobile -->
+      <div class="hidden md:flex items-center gap-7">
+        <a href="#hero"       class="text-sm text-slate-400 hover:text-sky-400 transition-colors duration-150">Home</a>
+        <a href="#impact"     class="text-sm text-slate-400 hover:text-sky-400 transition-colors duration-150">Impact</a>
+        <a href="#about"      class="text-sm text-slate-400 hover:text-sky-400 transition-colors duration-150">About</a>
+        <a href="#experience" class="text-sm text-slate-400 hover:text-sky-400 transition-colors duration-150">Experience</a>
+        <a href="#stack"      class="text-sm text-slate-400 hover:text-sky-400 transition-colors duration-150">Stack</a>
+        <a href="#education"  class="text-sm text-slate-400 hover:text-sky-400 transition-colors duration-150">Education</a>
+        <a href="#contact"    class="text-sm text-slate-400 hover:text-sky-400 transition-colors duration-150">Contact</a>
+      </div>
+
+      <!-- Right side: lang, CV, hamburger -->
+      <div class="flex items-center gap-2.5">
+        <a href="index_pt.html"
+           class="text-xs font-semibold px-4 py-2 rounded-full border border-slate-700 text-slate-400
+                  hover:border-sky-500/60 hover:text-sky-400 transition-all duration-150">
+          PT
+        </a>
+        <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+           class="hidden sm:inline-flex text-xs font-semibold px-4 py-2 rounded-full bg-sky-500 text-white
+                  hover:bg-sky-400 transition-all duration-150 shadow-lg shadow-sky-500/20">
+          Download&nbsp;CV
+        </a>
+        <!-- Hamburger — mobile only -->
+        <button id="nav-toggle" aria-label="Toggle menu"
+                class="md:hidden flex flex-col justify-center items-center w-9 h-9 gap-[5px]
+                       rounded-lg border border-slate-700 hover:border-sky-500/50 transition-colors duration-150">
+          <span class="block w-4 h-[1.5px] bg-slate-400 transition-all duration-200" id="ham-1"></span>
+          <span class="block w-4 h-[1.5px] bg-slate-400 transition-all duration-200" id="ham-2"></span>
+          <span class="block w-4 h-[1.5px] bg-slate-400 transition-all duration-200" id="ham-3"></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800/80 bg-slate-950/95 nav-blur">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col gap-1">
+        <a href="#hero"       class="mobile-nav-link" onclick="closeMobileMenu()">Home</a>
+        <a href="#impact"     class="mobile-nav-link" onclick="closeMobileMenu()">Impact</a>
+        <a href="#about"      class="mobile-nav-link" onclick="closeMobileMenu()">About</a>
+        <a href="#experience" class="mobile-nav-link" onclick="closeMobileMenu()">Experience</a>
+        <a href="#stack"      class="mobile-nav-link" onclick="closeMobileMenu()">Tech Stack</a>
+        <a href="#education"  class="mobile-nav-link" onclick="closeMobileMenu()">Education</a>
+        <a href="#contact"    class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+        <div class="border-t border-slate-800 mt-3 pt-3">
+          <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400
+                    text-white font-semibold text-sm transition-all duration-150">
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ══════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════ -->
+  <section id="hero" class="hero-bg hero-dots min-h-screen flex items-center pt-16 relative overflow-hidden">
+
+    <!-- Extra side glow blobs -->
+    <div class="pointer-events-none absolute -top-32 -left-32 w-[28rem] h-[28rem]
+                bg-sky-500/5 rounded-full blur-3xl"></div>
+    <div class="pointer-events-none absolute top-1/3 -right-24 w-[22rem] h-[22rem]
+                bg-indigo-500/7 rounded-full blur-3xl"></div>
+
+    <div class="max-w-6xl mx-auto px-6 py-24 w-full">
+      <!-- Two-column grid -->
+      <div class="grid lg:grid-cols-[1fr_22rem] xl:grid-cols-[1fr_24rem] gap-12 xl:gap-16 items-center">
+
+        <!-- ── LEFT COLUMN ─────────────────────────────── -->
+        <div>
+          <!-- Status badge -->
+          <div class="fade-up-1 inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full
+                      bg-slate-800/80 border border-slate-700/80 text-xs text-slate-400 mb-9">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot"></span>
+            Data Product Specialist · Grupo Boticário · Remote
+          </div>
+
+          <!-- Mobile profile identity (hidden on lg+) -->
+          <div class="lg:hidden fade-up-1 mb-7 flex items-center gap-4">
+            <div class="relative flex-shrink-0">
+              <div class="absolute -inset-1 rounded-full
+                          bg-gradient-to-br from-sky-500/40 to-indigo-500/20
+                          blur pointer-events-none"></div>
+              <div class="relative w-14 h-14 rounded-full overflow-hidden
+                          border-2 border-slate-700 ring-1 ring-sky-500/20">
+                <img src="perfil.jpg" alt="Rodrigo Albuquerque da Rocha"
+                     class="w-full h-full object-cover object-top"
+                     onerror="this.style.display='none';
+                              this.parentElement.style.display='flex';
+                              this.parentElement.style.alignItems='center';
+                              this.parentElement.style.justifyContent='center';
+                              this.parentElement.style.background='#1e293b';
+                              this.insertAdjacentHTML('afterend',
+                                '<span style=\'font-size:1.75rem;opacity:.35\'>&#128100;</span>')" />
+              </div>
+            </div>
+            <div>
+              <div class="text-sm font-bold text-white">Rodrigo A. da Rocha</div>
+              <div class="text-xs text-sky-400 mt-0.5">Data Product Specialist</div>
+            </div>
+          </div>
+
+          <!-- Name -->
+          <h1 class="fade-up-2 text-[clamp(3rem,8.5vw,5.75rem)] font-black tracking-tight leading-[.90] text-white mb-7">
+            Rodrigo<br/>
+            <span class="text-gradient name-accent">Albuquerque<br/>da Rocha</span>
+          </h1>
+
+          <!-- Tagline -->
+          <p class="fade-up-3 text-slate-400 text-base md:text-lg leading-relaxed mb-2 max-w-xl">
+            Turning raw data into strategic assets — from architecture to adoption.
+          </p>
+          <!-- Title pills -->
+          <p class="fade-up-3 text-sm text-slate-500 font-medium mb-8">
+            GCP &amp; BigQuery
+            <span class="text-slate-700 mx-2">·</span>
+            ML / GenAI
+            <span class="text-slate-700 mx-2">·</span>
+            DataOps
+            <span class="text-slate-700 mx-2">·</span>
+            Data Architecture
+          </p>
+
+          <!-- Credential badges -->
+          <div class="fade-up-4 flex flex-wrap gap-2 mb-10">
+
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md
+                       bg-indigo-950/60 border border-indigo-700/40 text-xs font-medium text-indigo-300">
+            <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor"
+                 stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0
+                       01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0
+                       00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+            </svg>
+            MBA &mdash; AI &amp; Machine Learning &middot; Cruzeiro do Sul &middot; 2024&ndash;2025
+          </span>
+
+          <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md
+                       bg-slate-800/80 border border-slate-700 text-xs font-medium text-slate-300">
+            <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor"
+                 stroke-width="1.8" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0
+                       01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0
+                       00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+            </svg>
+            MBA &mdash; Business Intelligence &middot; Univ. Positivo &middot; 2014&ndash;2015
+          </span>
+
+          </div>
+
+          <!-- Primary CTAs -->
+          <div class="fade-up-5 flex flex-wrap gap-3">
+          <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400
+                    text-white font-semibold text-sm transition-all duration-150
+                    shadow-xl shadow-sky-500/20 hover:shadow-sky-400/30">
+            View Full CV — English
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4
+                       M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+          <a href="CV_Rodrigo_Rocha_PT.html" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-700
+                    hover:border-sky-500/60 text-slate-300 hover:text-sky-400 font-semibold text-sm
+                    transition-all duration-150">
+            Ver CV — Português
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4
+                       M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rodrocha" target="_blank" rel="noopener"
+             class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-700
+                    hover:border-blue-500/60 text-slate-300 hover:text-blue-400 font-semibold text-sm
+                    transition-all duration-150">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136
+                       1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85
+                       3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0
+                       01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z
+                       M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451
+                       C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            LinkedIn
+          </a>
+          </div>
+        </div><!-- end left column -->
+
+        <!-- ── RIGHT COLUMN — unified profile card ── -->
+        <div class="hidden lg:block relative fade-up-2" style="animation-delay:.2s">
+          <!-- Glow behind card -->
+          <div class="absolute -inset-6 bg-gradient-to-br from-sky-500/8 to-indigo-500/8
+                      rounded-3xl blur-2xl pointer-events-none"></div>
+
+          <div class="relative hero-card rounded-2xl border border-slate-700/50
+                      shadow-2xl shadow-slate-950/60 overflow-hidden">
+
+            <!-- ── Photo + identity header ─────────────── -->
+            <div class="flex flex-col items-center px-7 pt-8 pb-6 border-b border-slate-800/80">
+              <div class="relative mb-4">
+                <div class="absolute -inset-1.5 rounded-full
+                            bg-gradient-to-br from-sky-500/45 via-indigo-500/25 to-transparent
+                            blur pointer-events-none"></div>
+                <div class="relative w-24 h-24 rounded-full overflow-hidden
+                            border-2 border-slate-600 ring-2 ring-sky-500/20">
+                  <img src="perfil.jpg" alt="Rodrigo Albuquerque da Rocha"
+                       class="w-full h-full object-cover object-top"
+                       onerror="this.style.display='none';
+                                this.parentElement.style.display='flex';
+                                this.parentElement.style.alignItems='center';
+                                this.parentElement.style.justifyContent='center';
+                                this.parentElement.style.background='#1e293b';
+                                this.insertAdjacentHTML('afterend',
+                                  '<span style=\'font-size:2.5rem;opacity:.35\'>&#128100;</span>')" />
+                </div>
+              </div>
+              <div class="text-center">
+                <div class="text-sm font-bold text-white leading-tight">Rodrigo A. da Rocha</div>
+                <div class="text-xs text-sky-400 font-medium mt-1">Data Product Specialist</div>
+                <div class="inline-flex items-center gap-1.5 mt-2
+                            text-[0.65rem] text-emerald-400 font-semibold">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 pulse-dot"></span>
+                  Grupo Boticário · 2017–Present
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Metrics ────────────────────────── -->
+            <div class="px-7 divide-y divide-slate-800/80">
+
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <div class="text-[1.75rem] font-black num text-gradient leading-none">20 TB</div>
+                  <div class="text-xs text-slate-500 mt-0.5">Data Migrated — GCP</div>
+                </div>
+                <div class="w-9 h-9 rounded-xl bg-sky-500/10 border border-sky-500/20
+                            flex items-center justify-center flex-shrink-0">
+                  <svg class="w-[1.125rem] h-[1.125rem] text-sky-400" fill="none" stroke="currentColor"
+                       stroke-width="1.7" viewBox="0 0 24 24">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                    <path stroke-linecap="round" d="M3 5v14c0 1.657 4.029 3 9 3s9-1.343 9-3V5"/>
+                    <path stroke-linecap="round" d="M3 12c0 1.657 4.029 3 9 3s9-1.343 9-3"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <div class="text-[1.75rem] font-black num text-gradient leading-none">100K</div>
+                  <div class="text-xs text-slate-500 mt-0.5">Employees Impacted — BRF</div>
+                </div>
+                <div class="w-9 h-9 rounded-xl bg-indigo-500/10 border border-indigo-500/20
+                            flex items-center justify-center flex-shrink-0">
+                  <svg class="w-[1.125rem] h-[1.125rem] text-indigo-400" fill="none" stroke="currentColor"
+                       stroke-width="1.7" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2
+                             c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0
+                             015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857
+                             m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="flex items-center justify-between py-3.5">
+                <div>
+                  <div class="text-[1.75rem] font-black num text-gradient leading-none">500+</div>
+                  <div class="text-xs text-slate-500 mt-0.5">Franchisees Served</div>
+                </div>
+                <div class="w-9 h-9 rounded-xl bg-violet-500/10 border border-violet-500/20
+                            flex items-center justify-center flex-shrink-0">
+                  <svg class="w-[1.125rem] h-[1.125rem] text-violet-400" fill="none" stroke="currentColor"
+                       stroke-width="1.7" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0
+                             002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0
+                             012 2v10m-6 0a2 2 0 002 2h2a2 2 0
+                             002-2m0 0V5a2 2 0 012-2h2a2 2 0
+                             012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- ── Footer ──────────────────────────── -->
+            <div class="px-7 py-4 border-t border-slate-800/80
+                        flex items-center justify-between">
+              <div class="flex items-center gap-1.5">
+                <svg class="w-3 h-3 text-slate-600 flex-shrink-0" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827
+                           0l-4.244-4.243a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+                <span class="text-xs text-slate-500">Florianópolis, SC</span>
+              </div>
+              <span class="inline-flex items-center gap-1 text-xs text-slate-500">
+                <svg class="w-3 h-3 flex-shrink-0" fill="none" stroke="currentColor"
+                     stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0
+                           002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+                Remote
+              </span>
+            </div>
+
+          </div>
+        </div><!-- end right column -->
+
+      </div><!-- end grid -->
+
+      <!-- Scroll cue -->
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5
+                  text-slate-700 pointer-events-none">
+        <span class="text-[0.6rem] tracking-[.18em] uppercase font-medium">Scroll</span>
+        <svg class="w-4 h-4 scroll-cue" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       IMPACT METRICS
+  ══════════════════════════════════════════════════ -->
+  <section id="impact" class="py-24 bg-slate-900 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="mb-14">
+        <p class="text-xs font-bold tracking-[.2em] text-sky-400 uppercase mb-3">Career Impact</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Numbers That Drive Decisions</h2>
+      </div>
+
+      <!-- Primary 3-col metrics -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-6">
+
+        <!-- 20 TB -->
+        <div class="card-lift p-8 rounded-2xl bg-slate-800 border border-slate-700">
+          <div class="text-[3.5rem] md:text-[4.5rem] font-black num text-gradient leading-none mb-4">
+            20 TB
+          </div>
+          <div class="text-base font-bold text-white mb-2">Data Migrated</div>
+          <div class="text-sm text-slate-400 leading-relaxed">
+            End-to-end legacy modernization — SAP HANA / QlikView to a fully scalable GCP ecosystem
+            (BigQuery + Looker + Tableau), preserving governance and business continuity.
+          </div>
+        </div>
+
+        <!-- 100K -->
+        <div class="card-lift p-8 rounded-2xl bg-slate-800 border border-slate-700">
+          <div class="text-[3.5rem] md:text-[4.5rem] font-black num text-gradient leading-none mb-4">
+            100K
+          </div>
+          <div class="text-base font-bold text-white mb-2">Employees Impacted</div>
+          <div class="text-sm text-slate-400 leading-relaxed">
+            Automated variable compensation and goals calculation for ~100,000 employees and 20,000+
+            targets at BRF globally — eliminating manual processes and reducing critical errors.
+          </div>
+        </div>
+
+        <!-- 500+ -->
+        <div class="card-lift p-8 rounded-2xl bg-slate-800 border border-slate-700">
+          <div class="text-[3.5rem] md:text-[4.5rem] font-black num text-gradient leading-none mb-4">
+            500+
+          </div>
+          <div class="text-base font-bold text-white mb-2">Franchisees Served</div>
+          <div class="text-sm text-slate-400 leading-relaxed">
+            Designed and maintained customized data products, analytical workflows, and self-service
+            dashboards directly consumed by the entire Grupo Boticário franchise network.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Secondary row -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-5 rounded-xl bg-slate-800/40 border border-slate-800 text-center">
+          <div class="text-2xl font-black num text-white">20+</div>
+          <div class="text-xs text-slate-500 mt-1 tracking-wide">Years in Tech</div>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-800/40 border border-slate-800 text-center">
+          <div class="text-2xl font-black num text-white">7+</div>
+          <div class="text-xs text-slate-500 mt-1 tracking-wide">Years at Boticário</div>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-800/40 border border-slate-800 text-center">
+          <div class="text-2xl font-black num text-white">2</div>
+          <div class="text-xs text-slate-500 mt-1 tracking-wide">MBA Specializations</div>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-800/40 border border-slate-800 text-center">
+          <div class="text-2xl font-black num text-white">3</div>
+          <div class="text-xs text-slate-500 mt-1 tracking-wide">Active Certs (2025)</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       EXECUTIVE SUMMARY
+  ══════════════════════════════════════════════════ -->
+  <section id="about" class="py-24 hero-bg">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+
+        <!-- Left — narrative -->
+        <div>
+          <p class="text-xs font-bold tracking-[.2em] text-sky-400 uppercase mb-3">Executive Summary</p>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-5">
+            20 Years Turning Data<br/>into Business Value
+          </h2>
+          <div class="w-10 h-0.5 bg-sky-500 mb-8 rounded-full"></div>
+          <div class="space-y-4 text-slate-300 text-[0.9375rem] leading-7 text-justify">
+            <p>
+              Data professional with an end-to-end trajectory — from systems engineering and
+              integration to data product leadership — specializing in governance, ecosystem
+              modernization, and the practical application of Machine Learning and Generative AI.
+            </p>
+            <p>
+              Currently <strong class="text-white font-semibold">Data Product Specialist at Grupo
+              Boticário</strong>, leading the migration and democratization of analytical platforms,
+              aligning C-level strategy with scalable data architecture.
+            </p>
+            <p>
+              Deep experience building and migrating platforms (Qlik → GCP), structuring business
+              rules, automating enterprise-scale calculations, and deploying LLM-based classification
+              and GenAI tools in production — always tied to measurable ROI.
+            </p>
+            <p>
+              Strategic trajectory toward <em class="text-slate-200">Staff / Principal Data Product</em>
+              or cross-functional technical leadership, consolidating product metrics (adoption, NPS,
+              decision lead-time) and accelerating ML/DataOps maturity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right — differentiators -->
+        <div class="space-y-3">
+          <p class="text-xs font-bold tracking-[.2em] text-sky-400 uppercase mb-6">Key Differentiators</p>
+
+          <!-- Card template — repeated 4× -->
+          <div class="flex gap-4 p-5 rounded-xl bg-slate-800/70 border border-slate-700/70 card-lift">
+            <div class="w-8 h-8 rounded-lg bg-sky-500/10 border border-sky-500/20
+                        flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-sky-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M4 7h16M4 12h16M4 17h7"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-white mb-1">End-to-End Ownership</div>
+              <div class="text-xs text-slate-400 leading-relaxed">
+                Discovery → modeling → engineering → governance → product definition → adoption.
+                Full lifecycle, zero hand-off gaps.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-5 rounded-xl bg-slate-800/70 border border-slate-700/70 card-lift">
+            <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20
+                        flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2
+                         c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857
+                         M7 20v-2c0-.656.126-1.283.356-1.857
+                         m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-white mb-1">Business–Technology Bridge</div>
+              <div class="text-xs text-slate-400 leading-relaxed">
+                Fluent with franchisees, corporate domains, and C-level — translating analytical
+                complexity into boardroom-ready outcomes.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-5 rounded-xl bg-slate-800/70 border border-slate-700/70 card-lift">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20
+                        flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-white mb-1">AI-Augmented Delivery</div>
+              <div class="text-xs text-slate-400 leading-relaxed">
+                LLM-based incident classification systems, GenAI productivity tooling, and ML
+                pipelines running in production environments today.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-4 p-5 rounded-xl bg-slate-800/70 border border-slate-700/70 card-lift">
+            <div class="w-8 h-8 rounded-lg bg-amber-500/10 border border-amber-500/20
+                        flex items-center justify-center flex-shrink-0 mt-0.5">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor"
+                   stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0
+                         3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806
+                         1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0
+                         01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42
+                         3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806
+                         -1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946
+                         3.42 3.42 0 013.138-3.138z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-sm font-semibold text-white mb-1">Scalability Without Sacrificing Speed</div>
+              <div class="text-xs text-slate-400 leading-relaxed">
+                Reliable, standardized architectures (data contracts, catalogues, DataOps) that
+                evolve with the business — not against it.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       EXPERIENCE — HIGH-LEVEL
+  ══════════════════════════════════════════════════ -->
+  <section id="experience" class="py-24 bg-slate-900 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="mb-14">
+        <p class="text-xs font-bold tracking-[.2em] text-sky-400 uppercase mb-3">Professional Experience</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Career Milestones</h2>
+      </div>
+
+      <div class="space-y-4">
+
+        <!-- ── Grupo Boticário ────────────────────────── -->
+        <div class="card-lift p-6 md:px-8 rounded-2xl bg-slate-800 border border-slate-700
+                    grid md:grid-cols-[3.5rem_1fr_auto] gap-5 md:gap-7 items-center">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-sky-500/20 to-indigo-500/20
+                      border border-slate-600 flex items-center justify-center
+                      text-xl font-black text-sky-400 tracking-tight select-none">
+            GB
+          </div>
+          <div>
+            <div class="text-base font-bold text-white mb-0.5">Grupo Boticário</div>
+            <div class="text-sm text-sky-400 font-medium mb-2">
+              Data Product Specialist (Mar/2023–Present) · Domain Specialist (Apr/2019–Mar/2023) · BT Specialist (Nov/2017–Apr/2019)
+            </div>
+            <div class="text-sm text-slate-400 leading-relaxed">
+              Leading platform modernization (QlikView → GCP), democratizing data access for 500+
+              franchisees, and applying ML/GenAI in production. Migrated ~20 TB of analytical data
+              while maintaining governance and business continuity.
+            </div>
+          </div>
+          <div class="md:text-right flex-shrink-0">
+            <div class="text-sm font-semibold text-white">2017 – Present</div>
+            <div class="text-xs text-slate-500 mt-0.5">8+ years · São José dos Pinhais</div>
+            <span class="inline-block mt-2 px-2.5 py-0.5 rounded-full
+                         bg-emerald-900/30 border border-emerald-700/40 text-xs text-emerald-400">
+              Active
+            </span>
+          </div>
+        </div>
+
+        <!-- ── BRF ────────────────────────────────────── -->
+        <div class="card-lift p-6 md:px-8 rounded-2xl bg-slate-800 border border-slate-700
+                    grid md:grid-cols-[3.5rem_1fr_auto] gap-5 md:gap-7 items-center">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-red-500/20 to-orange-500/20
+                      border border-slate-600 flex items-center justify-center
+                      text-base font-black text-orange-400 tracking-tight select-none">
+            BRF
+          </div>
+          <div>
+            <div class="text-base font-bold text-white mb-0.5">BRF S.A.</div>
+            <div class="text-sm text-sky-400 font-medium mb-2">
+              Management Analyst (Jan/2017–Nov/2017) · IT Analytics Analyst (Feb/2015–Dec/2016)
+            </div>
+            <div class="text-sm text-slate-400 leading-relaxed">
+              Automated goal and compensation calculation for <strong class="text-slate-300">100,000
+              employees</strong> and 20,000+ targets. SAP BW / HANA data flows for Tableau and Power BI.
+              Product Owner for the corporate BI roadmap.
+            </div>
+          </div>
+          <div class="md:text-right flex-shrink-0">
+            <div class="text-sm font-semibold text-white">2015 – 2017</div>
+            <div class="text-xs text-slate-500 mt-0.5">2y 10m · Curitiba</div>
+          </div>
+        </div>
+
+        <!-- ── Positivo Informática ───────────────────── -->
+        <div class="card-lift p-6 md:px-8 rounded-2xl bg-slate-800 border border-slate-700
+                    grid md:grid-cols-[3.5rem_1fr_auto] gap-5 md:gap-7 items-center">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-violet-500/20 to-slate-700/30
+                      border border-slate-600 flex items-center justify-center
+                      text-base font-black text-violet-300 tracking-tight select-none">
+            PI
+          </div>
+          <div>
+            <div class="text-base font-bold text-white mb-0.5">Positivo Informática</div>
+            <div class="text-sm text-sky-400 font-medium mb-2">Systems Analyst</div>
+            <div class="text-sm text-slate-400 leading-relaxed">
+              R&amp;D of backend and database solutions for e-learning platforms. Built LRS using xAPI
+              (TinCan) protocol. Developed adaptive education backend and digital books for one of
+              Brazil's largest school networks.
+            </div>
+          </div>
+          <div class="md:text-right flex-shrink-0">
+            <div class="text-sm font-semibold text-white">2013 – 2017</div>
+            <div class="text-xs text-slate-500 mt-0.5">4 years · Curitiba</div>
+          </div>
+        </div>
+
+        <!-- ── AIS Tecnologia ─────────────────────────── -->
+        <div class="card-lift p-6 md:px-8 rounded-2xl bg-slate-800 border border-slate-700
+                    grid md:grid-cols-[3.5rem_1fr_auto] gap-5 md:gap-7 items-center">
+          <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-teal-500/20 to-slate-700/30
+                      border border-slate-600 flex items-center justify-center
+                      text-base font-black text-teal-300 tracking-tight select-none">
+            AIS
+          </div>
+          <div>
+            <div class="text-base font-bold text-white mb-0.5">AIS Tecnologia &amp; Sistemas</div>
+            <div class="text-sm text-sky-400 font-medium mb-2">Systems Analyst / Intern → Analyst</div>
+            <div class="text-sm text-slate-400 leading-relaxed">
+              Developed Production Control Planning (PCP) system, warehouse &amp; cold storage
+              monitoring, and real-time beef production tracking — covering the full development
+              lifecycle from internship to senior analyst.
+            </div>
+          </div>
+          <div class="md:text-right flex-shrink-0">
+            <div class="text-sm font-semibold text-white">2005 – 2010</div>
+            <div class="text-xs text-slate-500 mt-0.5">5 years · Curitiba</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Full CV CTA -->
+      <div class="mt-10 text-center">
+        <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-sky-400
+                  transition-colors duration-150">
+          Full career history in CV
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4
+                     M14 4h6m0 0v6m0-6L10 14"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       TECH STACK
+  ══════════════════════════════════════════════════ -->
+  <section id="stack" class="py-24 hero-bg">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="mb-14">
+        <p class="text-xs font-bold tracking-[.2em] text-sky-400 uppercase mb-3">Technology</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-white">Tech Stack</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Cloud & Data Platform -->
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700 card-lift">
+          <div class="text-[0.65rem] font-bold tracking-[.2em] text-sky-400 uppercase mb-4">
+            Cloud &amp; Data Platform
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Google Cloud Platform</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">BigQuery</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Dataflow</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">AI Platform</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Azure AZ-900</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">AWS S3</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">SAP BW / HANA</span>
+          </div>
+        </div>
+
+        <!-- Analytics & BI -->
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700 card-lift">
+          <div class="text-[0.65rem] font-bold tracking-[.2em] text-sky-400 uppercase mb-4">
+            Analytics &amp; BI
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Tableau</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Looker</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">QlikView</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">QlikSense</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Qlik NPrinting</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Power BI</span>
+          </div>
+        </div>
+
+        <!-- ML & AI -->
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-indigo-800/40 card-lift">
+          <div class="text-[0.65rem] font-bold tracking-[.2em] text-indigo-400 uppercase mb-4">
+            Machine Learning &amp; AI
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Predictive Modeling</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">LLM Classification</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Generative AI</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">MLflow</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">BigQuery ML</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">MLOps</span>
+          </div>
+        </div>
+
+        <!-- Data Engineering -->
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700 card-lift">
+          <div class="text-[0.65rem] font-bold tracking-[.2em] text-sky-400 uppercase mb-4">
+            Data Engineering
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Apache Airflow</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">dbt</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">ETL / ELT</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">SSIS</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Data Modeling</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">DataOps</span>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-slate-700 card-lift">
+          <div class="text-[0.65rem] font-bold tracking-[.2em] text-sky-400 uppercase mb-4">
+            Languages
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Python</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">SQL</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Java</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">C# / .NET</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">JavaScript</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">PowerShell</span>
+          </div>
+        </div>
+
+        <!-- Governance & Product -->
+        <div class="p-6 rounded-2xl bg-slate-800/60 border border-emerald-800/30 card-lift">
+          <div class="text-[0.65rem] font-bold tracking-[.2em] text-emerald-400 uppercase mb-4">
+            Governance &amp; Product
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Data Governance</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Data Contracts</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Product Discovery</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Backlog Management</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Agile / Scrum</span>
+            <span class="px-2.5 py-1 rounded-md bg-slate-700/80 text-xs text-slate-300 font-medium">Stakeholder Mgmt</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       EDUCATION & CERTIFICATIONS
+  ══════════════════════════════════════════════════ -->
+  <section id="education" class="py-24 bg-slate-900 border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-16">
+
+        <!-- Education timeline -->
+        <div>
+          <p class="text-xs font-bold tracking-[.2em] text-sky-400 uppercase mb-3">Education</p>
+          <h2 class="text-2xl font-bold text-white mb-10">Academic Background</h2>
+
+          <div class="relative pl-5 space-y-8
+                      before:absolute before:left-0 before:top-2 before:bottom-0
+                      before:w-px before:bg-gradient-to-b before:from-sky-500 before:to-transparent">
+
+            <div class="relative">
+              <div class="absolute -left-[1.1875rem] top-1 w-2.5 h-2.5 rounded-full
+                          bg-sky-500 ring-4 ring-slate-900"></div>
+              <div class="text-sm font-semibold text-white leading-snug">
+                MBA — Artificial Intelligence &amp; Machine Learning
+              </div>
+              <div class="text-xs text-sky-400 font-medium mt-0.5">
+                Universidade Cruzeiro do Sul · 2024–2025
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -left-[1.1875rem] top-1 w-2.5 h-2.5 rounded-full
+                          bg-sky-600 ring-4 ring-slate-900"></div>
+              <div class="text-sm font-semibold text-white leading-snug">
+                MBA — Business Intelligence
+              </div>
+              <div class="text-xs text-sky-400 font-medium mt-0.5">
+                Universidade Positivo · 2014–2015
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -left-[1.1875rem] top-1 w-2.5 h-2.5 rounded-full
+                          bg-slate-600 ring-4 ring-slate-900"></div>
+              <div class="text-sm font-semibold text-white leading-snug">
+                Technology in Systems Analysis &amp; Development
+              </div>
+              <div class="text-xs text-slate-400 mt-0.5">UFPR · 2008–2012</div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -left-[1.1875rem] top-1 w-2.5 h-2.5 rounded-full
+                          bg-slate-700 ring-4 ring-slate-900"></div>
+              <div class="text-sm font-semibold text-white leading-snug">
+                Computer Technician — Information Technology
+              </div>
+              <div class="text-xs text-slate-400 mt-0.5">UFPR · 2002–2003</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Certifications list -->
+        <div>
+          <p class="text-xs font-bold tracking-[.2em] text-sky-400 uppercase mb-3">Certifications</p>
+          <h2 class="text-2xl font-bold text-white mb-10">Key Credentials</h2>
+
+          <div class="space-y-2.5">
+
+            <!-- Confirmed -->
+            <div class="flex items-center gap-3 p-3.5 rounded-xl
+                        bg-slate-800/70 border border-slate-700/70">
+              <div class="w-1.5 h-1.5 rounded-full bg-sky-400 flex-shrink-0"></div>
+              <span class="text-sm text-slate-300 flex-1">BigQuery for Machine Learning — Google Cloud</span>
+              <span class="text-xs text-slate-500 flex-shrink-0">2025</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-xl
+                        bg-slate-800/70 border border-slate-700/70">
+              <div class="w-1.5 h-1.5 rounded-full bg-sky-400 flex-shrink-0"></div>
+              <span class="text-sm text-slate-300 flex-1">Agile Leadership Fundamentals — ULSA</span>
+              <span class="text-xs text-slate-500 flex-shrink-0">2025</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-xl
+                        bg-slate-800/70 border border-slate-700/70">
+              <div class="w-1.5 h-1.5 rounded-full bg-sky-400 flex-shrink-0"></div>
+              <span class="text-sm text-slate-300 flex-1">People &amp; Negotiation Foundation — ULSA</span>
+              <span class="text-xs text-slate-500 flex-shrink-0">2025</span>
+            </div>
+
+            <!-- Planned -->
+            <div class="flex items-center gap-3 p-3.5 rounded-xl
+                        bg-amber-950/25 border border-amber-700/30">
+              <div class="w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0 pulse-dot"></div>
+              <span class="text-sm text-amber-300/90 flex-1">GCP Professional Data Engineer — Google Cloud</span>
+              <span class="text-xs text-amber-600 flex-shrink-0">Q1 2026</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-xl
+                        bg-amber-950/25 border border-amber-700/30">
+              <div class="w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0 pulse-dot"></div>
+              <span class="text-sm text-amber-300/90 flex-1">GCP Professional Cloud Architect — Google Cloud</span>
+              <span class="text-xs text-amber-600 flex-shrink-0">Q2 2026</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-3.5 rounded-xl
+                        bg-amber-950/25 border border-amber-700/30">
+              <div class="w-1.5 h-1.5 rounded-full bg-amber-400 flex-shrink-0 pulse-dot"></div>
+              <span class="text-sm text-amber-300/90 flex-1">Project Management Professional (PMP) — PMI</span>
+              <span class="text-xs text-amber-600 flex-shrink-0">Q3 2026</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════════════ -->
+  <section id="contact" class="py-28 hero-bg">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+
+      <p class="text-xs font-bold tracking-[.2em] text-sky-400 uppercase mb-4">Let's Connect</p>
+      <h2 class="text-3xl md:text-[2.75rem] font-black text-white leading-tight mb-5">
+        Ready to Build<br/>
+        <span class="text-gradient">Data Products at Scale?</span>
+      </h2>
+      <p class="text-slate-400 text-[0.9375rem] leading-7 max-w-lg mx-auto mb-12">
+        Interested in data product strategy, platform modernization, or AI integration at scale?
+        Let's talk.
+      </p>
+
+      <!-- CTA group -->
+      <div class="flex flex-wrap justify-center gap-3 mb-14">
+
+        <a href="mailto:rodrigo.adr@gmail.com"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400
+                  text-white font-semibold text-sm transition-all duration-150
+                  shadow-xl shadow-sky-500/20 hover:shadow-sky-400/30">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0
+                     00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          rodrigo.adr@gmail.com
+        </a>
+
+        <a href="https://www.linkedin.com/in/rodrocha" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-700
+                  hover:border-blue-500/60 text-slate-300 hover:text-blue-400 font-semibold text-sm
+                  transition-all duration-150">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136
+                     1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85
+                     3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0
+                     01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z
+                     M22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451
+                     C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          linkedin.com/in/rodrocha
+        </a>
+
+        <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-slate-700
+                  hover:border-sky-500/60 text-slate-300 hover:text-sky-400 font-semibold text-sm
+                  transition-all duration-150">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0
+                     01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+          </svg>
+          Download CV
+        </a>
+
+      </div>
+
+      <!-- Location line -->
+      <div class="inline-flex items-center gap-2 text-xs text-slate-600">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2"
+             viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243
+                   a8 8 0 1111.314 0zM15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+        </svg>
+        Florianópolis, Santa Catarina, Brazil · Remote &amp; On-site
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════ -->
+  <footer class="py-8 bg-slate-950 border-t border-slate-800/60">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+
+      <div class="text-xs text-slate-700 tracking-wide">
+        © 2026 Rodrigo Albuquerque da Rocha
+        <span class="mx-2 text-slate-800">·</span>
+        rodrigo.albuquerquedarocha.com.br
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="CV_Rodrigo_Rocha_PT.html" target="_blank" rel="noopener"
+           class="text-xs text-slate-600 hover:text-sky-400 transition-colors duration-150">
+          CV em Português
+        </a>
+        <a href="CV_Rodrigo_Rocha_EN.html" target="_blank" rel="noopener"
+           class="text-xs text-slate-600 hover:text-sky-400 transition-colors duration-150">
+          CV in English
+        </a>
+        <a href="https://www.linkedin.com/in/rodrocha" target="_blank" rel="noopener"
+           class="text-xs text-slate-600 hover:text-sky-400 transition-colors duration-150">
+          LinkedIn
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('nav-toggle');
+    const menu   = document.getElementById('mobile-menu');
+    const h1 = document.getElementById('ham-1');
+    const h2 = document.getElementById('ham-2');
+    const h3 = document.getElementById('ham-3');
+    let open = false;
+    toggle.addEventListener('click', () => {
+      open = !open;
+      menu.classList.toggle('hidden', !open);
+      h1.style.transform = open ? 'translateY(6.5px) rotate(45deg)' : '';
+      h2.style.opacity   = open ? '0' : '1';
+      h3.style.transform = open ? 'translateY(-6.5px) rotate(-45deg)' : '';
+    });
+    function closeMobileMenu() {
+      open = false;
+      menu.classList.add('hidden');
+      h1.style.transform = '';
+      h2.style.opacity   = '1';
+      h3.style.transform = '';
+    }
+  </script>
+
+
+</body>
+</html>
