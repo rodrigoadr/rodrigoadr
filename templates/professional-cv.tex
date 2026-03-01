@@ -1,0 +1,105 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Professional CV Template for Pandoc
+% LaTeX Template
+% Based on moderncv and customized for data professionals
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% moderncv themes
+\moderncvstyle{banking} % style options are 'casual', 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue} % color options 'black', 'blue', 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+
+% character encoding
+\usepackage[utf8]{inputenc}
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+
+% personal data
+\name{$if(name)$$name$$else$Rodrigo}{Albuquerque da Rocha$endif$}
+\title{$if(title)$$title$$else$Especialista em Produto de Dados$endif$}
+\address{$if(address)$$address$$else$Florianópolis, Santa Catarina, Brasil$endif$}
+\phone[mobile]{$if(phone)$$phone$$else$+55 41 988582931$endif$}
+\email{$if(email)$$email$$else$rodrigo.adr@gmail.com$endif$}
+\social[linkedin]{$if(linkedin)$$linkedin$$else$rodrocha$endif$}
+\social[github]{$if(github)$$github$$else$rodrigoadr$endif$}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CV content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\makecvtitle
+
+\section{Resumo Executivo}
+$if(summary)$
+$summary$
+$else$
+Especialista em dados com mais de 20 anos de experiência, liderando projetos de BI, IA, engenharia e modernização de dados em grandes empresas nacionais e multinacionais. Tenho histórico comprovado em migração de mais de 20TB de dados em tempo recorde utilizando IA, automação, Google Cloud, Dataproc e gestão de projetos ágeis.
+
+Sou reconhecido pela capacidade de transformar desafios complexos em soluções escaláveis, promovendo cultura data-driven, comunicação clara entre áreas técnicas e de negócio, negociação com stakeholders e liderança de times multidisciplinares e multiculturais.
+$endif$
+
+\section{Competências Principais}
+\cvitem{Tecnologias}{$if(tech-skills)$$tech-skills$$else$Machine Learning, Google Cloud Platform (GCP), Business Intelligence, Engenharia de Dados, DataOps e MLOps, BigQuery, Tableau, Looker$endif$}
+\cvitem{Gestão}{$if(management-skills)$$management-skills$$else$Gestão de Projetos Ágeis, Liderança de Times Multidisciplinares, Comunicação Técnica, Negociação com Stakeholders$endif$}
+\cvitem{Especialidades}{$if(specialties)$$specialties$$else$Inteligência Artificial Generativa, Modelos Preditivos, Modelagem e Governança de Dados, Arquitetura de Dados$endif$}
+
+$if(experience)$
+\section{Experiência Profissional}
+$for(experience)$
+\cventry{$experience.period$}{$experience.title$}{$experience.company$}{$experience.location$}{}{%
+$if(experience.description)$
+$experience.description$
+$endif$
+$if(experience.achievements)$
+\begin{itemize}%
+$for(experience.achievements)$
+\item $experience.achievements$
+$endfor$
+\end{itemize}
+$endif$
+}
+$endfor$
+$endif$
+
+$if(education)$
+\section{Formação Acadêmica}
+$for(education)$
+\cventry{$education.period$}{$education.degree$}{$education.institution$}{$education.location$}{$if(education.grade)$$education.grade$$endif$}{$if(education.description)$$education.description$$endif$}
+$endfor$
+$endif$
+
+$if(certifications)$
+\section{Certificações}
+\begin{itemize}%
+$for(certifications)$
+\item $certifications$
+$endfor$
+\end{itemize}
+$endif$
+
+$if(languages)$
+\section{Idiomas}
+$for(languages)$
+\cvitemwithcomment{$languages.language$}{$languages.level$}{$if(languages.comment)$$languages.comment$$endif$}
+$endfor$
+$endif$
+
+$if(publications)$
+\section{Publicações}
+\begin{itemize}%
+$for(publications)$
+\item $publications$
+$endfor$
+\end{itemize}
+$endif$
+
+\end{document}

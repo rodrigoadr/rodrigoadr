@@ -1,0 +1,309 @@
+/* Professional CV Styles for Markdown PDF */
+/* Save this file as cv-styles.css and configure your Markdown PDF extension to use it */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* General document styling */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #2d3748;
+    max-width: 210mm;
+    margin: 0 auto;
+    padding: 15mm 15mm;
+    background-color: #ffffff;
+}
+
+/* Headers styling */
+h1 {
+    font-size: 28pt;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 0 0 8pt 0;
+    text-align: center;
+    border-bottom: 3pt solid #3182ce;
+    padding-bottom: 12pt;
+    page-break-after: avoid;
+}
+
+h2 {
+    font-size: 16pt;
+    font-weight: 600;
+    color: #2d4157;
+    margin: 20pt 0 10pt 0;
+    border-bottom: 1pt solid #e2e8f0;
+    padding-bottom: 6pt;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 14pt;
+    font-weight: 600;
+    color: #4a5568;
+    margin: 16pt 0 8pt 0;
+    page-break-after: avoid;
+}
+
+/* QUEBRA DE PÁGINA APÓS O RESUMO */
+h3:contains("Competências Técnicas"), 
+#competências-técnicas {
+    page-break-before: always;
+}
+
+h4 {
+    font-size: 12pt;
+    font-weight: 500;
+    color: #4a5568;
+    margin: 12pt 0 6pt 0;
+}
+
+h5 {
+    font-size: 11pt;
+    font-weight: 500;
+    color: #4a5568;
+    margin: 8pt 0 4pt 0;
+    font-style: italic;
+}
+
+/* Contact information styling */
+.contact-info {
+    text-align: center;
+    margin: 16pt 0 24pt 0;
+    font-size: 10pt;
+    color: #718096;
+}
+
+.contact-info strong {
+    color: #2d3748;
+    font-weight: 500;
+}
+
+/* Emphasis and formatting */
+strong, b {
+    font-weight: 600;
+    color: #1a202c;
+}
+
+em, i {
+    font-style: italic;
+    color: #4a5568;
+}
+
+/* Lists styling */
+ul {
+    margin: 6pt 0 12pt 0;
+    padding-left: 18pt;
+}
+
+ol {
+    margin: 6pt 0 12pt 0;
+    padding-left: 18pt;
+}
+
+li {
+    margin: 3pt 0;
+    line-height: 1.3;
+}
+
+/* Nested lists */
+ul ul, ol ol, ul ol, ol ul {
+    margin: 3pt 0;
+}
+
+/* Links styling */
+a {
+    color: #3182ce;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tables styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12pt 0;
+    font-size: 10pt;
+}
+
+th {
+    background-color: #f7fafc;
+    color: #2d3748;
+    font-weight: 600;
+    padding: 6pt 10pt;
+    text-align: left;
+    border-bottom: 2pt solid #e2e8f0;
+}
+
+td {
+    padding: 5pt 10pt;
+    border-bottom: 1pt solid #e2e8f0;
+    vertical-align: top;
+}
+
+/* Code styling */
+code {
+    background-color: #f7fafc;
+    color: #e53e3e;
+    padding: 2pt 4pt;
+    border-radius: 3pt;
+    font-family: 'Fira Code', 'Courier New', monospace;
+    font-size: 9pt;
+}
+
+pre {
+    background-color: #f7fafc;
+    padding: 10pt;
+    border-radius: 6pt;
+    border-left: 4pt solid #3182ce;
+    margin: 12pt 0;
+    overflow-x: auto;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #2d3748;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 4pt solid #cbd5e0;
+    margin: 12pt 0;
+    padding: 0 0 0 12pt;
+    color: #4a5568;
+    font-style: italic;
+}
+
+/* Horizontal rules */
+hr {
+    border: none;
+    height: 1pt;
+    background-color: #e2e8f0;
+    margin: 20pt 0;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 12mm;
+        font-size: 10pt;
+        line-height: 1.3;
+    }
+    
+    /* Força quebra após resumo */
+    #resumo, 
+    h3[id="resumo"],
+    h3:contains("Resumo") {
+        page-break-after: always;
+    }
+    
+    /* Evita quebras indesejadas */
+    h1, h2, h3, h4, h5 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    /* Mantém seções juntas */
+    .experience-item,
+    ul, ol, p {
+        page-break-inside: avoid;
+        orphans: 2;
+        widows: 2;
+    }
+    
+    /* Remove página em branco final */
+    body::after {
+        content: "";
+        display: block;
+        page-break-after: avoid;
+    }
+    
+    /* Evita quebra no final */
+    *:last-child {
+        page-break-after: avoid;
+    }
+}
+
+/* Page breaks */
+.page-break {
+    page-break-before: always;
+}
+
+/* Custom classes for CV sections */
+.section-title {
+    font-size: 14pt;
+    font-weight: 600;
+    color: #2d4157;
+    margin: 18pt 0 8pt 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+}
+
+.experience-item {
+    margin: 12pt 0;
+    page-break-inside: avoid;
+}
+
+.job-title {
+    font-weight: 600;
+    color: #1a202c;
+    font-size: 12pt;
+}
+
+.company-name {
+    font-weight: 500;
+    color: #3182ce;
+    font-size: 11pt;
+}
+
+.period {
+    color: #718096;
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.location {
+    color: #718096;
+    font-size: 10pt;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180pt, 1fr));
+    gap: 10pt;
+    margin: 12pt 0;
+}
+
+.skill-category {
+    background-color: #f7fafc;
+    padding: 10pt;
+    border-radius: 6pt;
+    border-left: 4pt solid #3182ce;
+    page-break-inside: avoid;
+}
+
+.skill-category h4 {
+    margin: 0 0 6pt 0;
+    color: #2d4157;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 8mm 6mm;
+        font-size: 10pt;
+    }
+    
+    h1 {
+        font-size: 24pt;
+    }
+    
+    h2 {
+        font-size: 14pt;
+    }
+}
