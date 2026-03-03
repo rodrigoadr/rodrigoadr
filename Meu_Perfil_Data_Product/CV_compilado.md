@@ -16,7 +16,7 @@
 
 ### Resumo
 
-**Especialista em Produto de Dados** com mais de 20 anos transformando dados em valor de negócio para empresas Fortune 500. Migrei com sucesso 20TB de dados com alta precisão, automatizei processos para 100 mil funcionários e liderei projetos de IA/ML que geraram economia comprovada de tempo e recursos.
+**Especialista em Produto de Dados** com mais de 20 anos transformando dados em valor de negócio para empresas Fortune 500. Migrei com sucesso 56TB de dados com alta precisão utilizando arquitetura medallion, automatizei processos para 100 mil funcionários e liderei projetos de IA/ML que geraram economia comprovada de tempo e recursos.
 
 Reconhecido por **transformar desafios técnicos complexos em soluções escaláveis**, conectando áreas técnicas e estratégicas através de comunicação clara, negociação eficaz com stakeholders e liderança de times multidisciplinares e multiculturais.
 
@@ -55,7 +55,7 @@ Reconhecido por **transformar desafios técnicos complexos em soluções escalá
 
 Março 2023 – Presente - São José dos Pinhais, Paraná, Brasil  
 
-* **Implementei políticas de governança de dados** que garantiram alta integridade em migrações de 20TB+ de dados críticos de negócio
+* **Implementei políticas de governança de dados** que garantiram alta integridade em migrações de 56TB+ de dados críticos de negócio com arquitetura medallion
 * **Conectei áreas técnicas e estratégicas**, transformando dados em produtos e insights através de pipelines GCP/BigQuery, impactando 100K+ usuários finais
 * **Liderei projetos de modernização de dados** com automação de processos, implementando práticas DataOps/MLOps que reduziram significativamente tempo de deployment
 * **Desenvolvi modelos de IA generativa e preditivos** que aceleraram tomada de decisão executiva e melhoraram eficiência operacional
@@ -69,7 +69,7 @@ Abril 2019 – Março 2023
 * **Democratizei acesso aos dados para 300 franqueados**, definindo políticas e desenvolvendo regras de negócio que aumentaram eficiência
 * **Padronizei processos de dados** para consumo corporativo via Tableau/Looker, garantindo conformidade e qualidade para decisões estratégicas
 * **Gerenciei stakeholders C-level e projetos críticos**, entregando soluções inovadoras que impactaram diretamente resultados de negócio
-* **Protagonizei migração tecnológica QlikView → BigQuery**, processando 15TB de dados históricos sem perda, garantindo completa integridade  
+* **Protagonizei migração tecnológica QlikView → BigQuery**, processando 41TB de dados históricos sem perda com arquitetura medallion, garantindo completa integridade  
 
 ##### Especialista em Tecnologia de Negócios
 

@@ -86,7 +86,7 @@ Execute: `generate-pdf-working.bat`- **[CV Consolidado (Português)](Meu_Perfil_
 
 
 
-- **20TB** de dados migrados com alta precisão├── CV_Rodrigo_Rocha.html           # 🎯 ARQUIVO PRINCIPAL- [Publicações e Projetos](Meu_Perfil_Data_Product/04_Publicacoes_e_Projetos_Chave/README.md)
+- **56TB** de dados migrados com arquitetura medallion├── CV_Rodrigo_Rocha.html           # 🎯 ARQUIVO PRINCIPAL- [Publicações e Projetos](Meu_Perfil_Data_Product/04_Publicacoes_e_Projetos_Chave/README.md)
 
 - **100 mil** funcionários impactados por automações
 
@@ -142,7 +142,7 @@ Execute: `generate-pdf-working.bat`- **[CV Consolidado (Português)](Meu_Perfil_
 
 
 
-- **20TB** de dados migrados com alta precisão## 🚀 Destaques da carreira
+- **56TB** de dados migrados com arquitetura medallion## 🚀 Destaques da carreira
 
 - **100 mil** funcionários impactados por automações
 

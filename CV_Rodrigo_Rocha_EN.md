@@ -16,7 +16,7 @@
 
 ### Executive Summary
 
-**Data Product Specialist** with over 20 years transforming data into business value for Fortune 500 companies. Successfully migrated 20TB of data with high precision, automated processes for 100 thousand employees, and led AI/ML projects that generated proven time and resource savings.
+**Data Product Specialist** with over 20 years transforming data into business value for Fortune 500 companies. Successfully migrated 56TB of data with high precision using medallion architecture, automated processes for 100 thousand employees, and led AI/ML projects that generated proven time and resource savings.
 
 Recognized for **transforming complex technical challenges into scalable solutions**, connecting technical and strategic areas through clear communication, effective stakeholder negotiation, and leadership of multidisciplinary and multicultural teams.
 
@@ -55,7 +55,7 @@ Recognized for **transforming complex technical challenges into scalable solutio
 
 March 2023 – Present - São José dos Pinhais, Paraná, Brazil  
 
-* **Implemented data governance policies** ensuring high integrity in migrations of 20TB of critical business data
+* **Implemented data governance policies** ensuring high integrity in migrations of 56TB of critical business data using medallion architecture
 * **Connected technical and strategic areas**, transforming data into products and insights through GCP/BigQuery pipelines, impacting 100 thousand end users
 * **Led data modernization projects** with process automation, implementing DataOps/MLOps practices that significantly reduced deployment time
 * **Developed generative AI and predictive models** that accelerated executive decision-making and improved operational efficiency

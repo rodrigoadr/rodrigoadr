@@ -26,7 +26,7 @@ Promoção ao papel de Especialista de Domínio, com foco em construção de pro
 
 ### Conquistas
 
-- Migração progressiva de ~20 TB de dados analíticos para GCP iniciada neste período
+- Migração progressiva de ~56 TB de dados analíticos para GCP com arquitetura medallion iniciada neste período
 - Framework de governança de dados por domínio implementado
 - Primeiros modelos de ML em produção para o domínio de franquias
 

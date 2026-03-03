@@ -23,7 +23,7 @@ Cargo de maior senioridade na jornada de dados do Grupo Boticário, liderando a 
 
 ## Principais Conquistas
 
-- Migração de ~20 TB de dados analíticos de QlikView/Qlik Sense para GCP sem perda de governança ou continuidade de negócio.
+- Migração de ~56 TB de dados analíticos de QlikView/Qlik Sense para GCP utilizando arquitetura medallion, sem perda de governança ou continuidade de negócio.
 - Deploy de modelos de ML e LLM em produção via Vertex AI e BigQuery ML.
 - Plataforma de dados acessada por 500+ franqueados com disponibilidade e performance SLA definidos.
 - Redução de ~40% no tempo de resposta a incidentes de dados com classificação automatizada.
