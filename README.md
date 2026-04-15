@@ -1,7 +1,7 @@
 ﻿# Olá, eu sou o Rodrigo! 👋
 
-**Data Product Specialist** at Grupo Boticário and MBA student in Artificial Intelligence & Machine Learning at Universidade Cruzeiro do Sul.
-Previous experience as Domain Specialist — BT at Grupo Boticário, and Analytics & BI at BRF S.A.
+**Data Product Specialist** at Grupo Boticário, MBA in Artificial Intelligence & Machine Learning (Universidade Cruzeiro do Sul).
+Computer Science background from Universidade Federal do Paraná (UFPR). Previous experience as Domain Specialist — BT at Grupo Boticário, and Analytics & BI at BRF S.A.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rodrigoalbuquerque-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/rodrigoalbuquerque)
 [![GitHub](https://img.shields.io/badge/GitHub-rodrigoadr-181717?style=flat&logo=github)](https://github.com/rodrigoadr)
@@ -18,7 +18,11 @@ class RodrigoRocha:
         self.location       = 'Florianópolis, SC — Brazil'
         self.company        = 'Grupo Boticário'
         self.experience     = '20+ years in Fortune 500'
-        self.education      = 'MBA in AI & Machine Learning (2024–2025)'
+        self.education      = [
+            'MBA — AI & Machine Learning, Univ. Cruzeiro do Sul (2024–2025)',
+            'Technologist — Systems Analysis & Development, UFPR (2008–2012)',
+            'Computer Science (incomplete), UFPR (2005–2007)',
+        ]
         self.fields         = ['Data Products', 'Data Engineering', 'Machine Learning', 'Analytics & BI']
         self.tools          = ['Apache Airflow', 'dbt', 'BigQuery', 'Spark', 'MLflow', 'QlikSense', 'Looker']
         self.languages      = ['Python', 'SQL', 'Java', 'JavaScript']
