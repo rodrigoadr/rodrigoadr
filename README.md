@@ -1,198 +1,90 @@
-# CV Rodrigo Albuquerque da Rocha# CV Rodrigo Albuquerque da Rocha# Data Product Specialist — Professional Profile
+﻿# Olá, eu sou o Rodrigo! 👋
 
+**Data Product Specialist** at Grupo Boticário and MBA student in Artificial Intelligence & Machine Learning at Universidade Cruzeiro do Sul.
+Previous experience as Domain Specialist — BT at Grupo Boticário, and Analytics & BI at BRF S.A.
 
-
-**Especialista em Produto de Dados | MBA IA & Machine Learning | Mais de 20 Anos Fortune 500**
-
-
-
-## 🎯 Arquivos Principais**Especialista em Produto de Dados | MBA IA & Machine Learning | Mais de 20 Anos Fortune 500**Repositório contendo o perfil profissional de **Rodrigo Albuquerque da Rocha**, estruturado com foco em **Data Products**, **Data Engineering** e **Machine Learning**. Este repositório serve como portfólio técnico e documentação profissional completa.
-
-
-
-- **`CV_Rodrigo_Rocha_PT.html`** - Versão em português 🇧🇷
-
-- **`CV_Rodrigo_Rocha_EN.html`** - Versão em inglês 🇺🇸
-
-## 🎯 Arquivo Principal## 📂 Estrutura do repositório
-
-## 🚀 Como Usar
-
-
-
-### Para PDF:
-
-1. Abra o arquivo HTML desejado no navegador**`CV_Rodrigo_Rocha.html`** - CV profissional pronto para Fortune 500- `Meu_Perfil_Data_Product/` — Pasta principal contendo todos os documentos
-
-2. Pressione `Ctrl + P` 
-
-3. Selecione "Salvar como PDF"  - `01_Resumo_e_Skills/` — Resumo executivo e competências
-
-4. Configurações: A4, margens padrão, sem headers/footers
-
-## 🚀 Como Usar  - `02_Experiencia_Profissional/` — Histórico profissional detalhado
-
-### Para regenerar HTMLs:
-
-Execute: `generate-pdf-working.bat`  - `03_Formacao_Academica/` — Formação, cursos e certificações
-
-
-
-## 📋 Estrutura### Para PDF:  - `04_Publicacoes_e_Projetos_Chave/` — Portfolio técnico e contribuições
-
-
-
-```1. Abra `CV_Rodrigo_Rocha.html` no navegador  - `CV_compilado.md` — Versão consolidada em português
-
-├── CV_Rodrigo_Rocha_PT.html        # 🇧🇷 VERSÃO PORTUGUESA
-
-├── CV_Rodrigo_Rocha_EN.html        # 🇺🇸 VERSÃO INGLESA2. Pressione `Ctrl + P`   - `CV_compilado_en.md` — Versão consolidada em inglês
-
-├── Meu_Perfil_Data_Product/        # Fonte Markdown PT
-
-│   └── CV_compilado.md            3. Selecione "Salvar como PDF"- `.github/workflows/` — Automações para validação de qualidade
-
-├── CV_Rodrigo_Rocha_EN.md          # Fonte Markdown EN
-
-├── templates/                      # Estilos4. Configurações: A4, margens padrão, sem headers/footers
-
-│   └── cv-styles.css              # CSS profissional  
-
-└── generate-pdf-working.bat        # Script geração## 📄 Documentos principais
-
-```
-
-### Para regenerar HTML:
-
-## ✅ Características
-
-Execute: `generate-pdf-working.bat`- **[CV Consolidado (Português)](Meu_Perfil_Data_Product/CV_compilado.md)** — Versão completa em português
-
-- ✅ **100% Honesto** - Métricas reais verificáveis
-
-- ✅ **Linguagem Executiva** - Fortune 500 ready- **[CV Consolidado (English)](Meu_Perfil_Data_Product/CV_compilado_en.md)** — Versão completa em inglês
-
-- ✅ **Mais de 20 Anos** - Grupo Boticário + BRF
-
-- ✅ **Print Optimized** - Quebras de página profissionais## 📋 Estrutura- [Resumo Executivo](Meu_Perfil_Data_Product/01_Resumo_e_Skills/README.md)
-
-- ✅ **ATS Compatible** - Compatível com sistemas de RH
-
-- ✅ **Bilíngue** - Português e Inglês- [Experiência Profissional](Meu_Perfil_Data_Product/02_Experiencia_Profissional/README.md)
-
-
-
-## 🏆 Conquistas Principais```- [Formação Acadêmica](Meu_Perfil_Data_Product/03_Formacao_Academica/README.md)
-
-
-
-- **56TB** de dados migrados com arquitetura medallion├── CV_Rodrigo_Rocha.html           # 🎯 ARQUIVO PRINCIPAL- [Publicações e Projetos](Meu_Perfil_Data_Product/04_Publicacoes_e_Projetos_Chave/README.md)
-
-- **100 mil** funcionários impactados por automações
-
-- **500** franqueados com acesso democratizado a dados├── Meu_Perfil_Data_Product/        # Fonte Markdown
-
-- **6 anos** no Grupo Boticário (líder beauty tech)
-
-- **MBA** em IA/ML + certificações Google Cloud│   └── CV_compilado.md            # CV fonte## 🎯 Perfil Profissional
-
-
-
-## 🌍 Aplicação por Mercado├── templates/                      # Estilos
-
-
-
-**🇧🇷 Versão Portuguesa:**│   └── cv-styles.css              # CSS profissional  **Data Product Specialist** com experiência sólida em transformar dados em produtos escaláveis e orientados ao negócio. Combinação única de expertise técnica em engenharia de dados com visão estratégica de produto.
-
-- Empresas brasileiras
-
-- Multinacionais no Brasil└── generate-pdf-working.bat        # Script geração
-
-- Mercado LATAM
-
-```### Principais competências:
-
-**🇺🇸 Versão Inglesa:**
-
-- Fortune 500 global- **Arquitetura de Dados**: Design e implementação de pipelines escaláveis
-
-- Big Tech internacional
-
-- Mercados Europa/EUA## ✅ Características- **Machine Learning**: Desenvolvimento e deploy de modelos em produção
-
-
-
----- **Gestão de Produtos**: Strategy, roadmaps, métricas de negócio
-
-
-
-**🎯 Status: Aprovado para Fortune 500 & Big Tech Global**- ✅ **100% Honesto** - Métricas reais verificáveis- **Liderança Técnica**: Mentoring, code review, padrões e boas práticas
-
-- ✅ **Linguagem Executiva** - Fortune 500 ready
-
-- ✅ **Mais de 20 Anos** - Grupo Boticário + BRF### Stack tecnológico:
-
-- ✅ **Print Optimized** - Quebras de página profissionais- **Linguagens**: Python, SQL, Java, JavaScript
-
-- ✅ **ATS Compatible** - Compatível com sistemas de RH- **Frameworks**: Apache Airflow, dbt, Spark, MLflow
-
-- **Cloud**: AWS, GCP, Azure
-
-## 🏆 Conquistas Principais- **Bancos**: PostgreSQL, MongoDB, BigQuery, SQL Server
-
-
-
-- **56TB** de dados migrados com arquitetura medallion## 🚀 Destaques da carreira
-
-- **100 mil** funcionários impactados por automações
-
-- **500** franqueados com acesso democratizado a dados- **8+ anos** de experiência em desenvolvimento de software e engenharia de dados
-
-- **6 anos** no Grupo Boticário (líder beauty tech)- **Liderança técnica** em projetos de transformação digital e modernização de sistemas
-
-- **MBA** em IA/ML + certificações Google Cloud- **Mentoring** de 10+ desenvolvedores junior ao longo da carreira
-
-- **Expertise** em integração de sistemas legados com arquiteturas modernas
-
----- **MBA** em Inteligência Artificial e Machine Learning (em andamento)
-
-
-
-**🎯 Status: Aprovado para Fortune 500 & Big Tech**## 📊 Métricas de impacto
-
-- Automatização que economizou **20+ horas semanais** em processos manuais
-- Sistema de monitoramento que reduziu tempo de detecção de problemas em **75%**
-- Liderança na migração de sistema monolítico para arquitetura distribuída
-- Implementação de sistema de integração conectando **15+ sistemas** diferentes
-
-## 📫 Contato
-
-- **LinkedIn**: [linkedin.com/in/rodrigoalbuquerque](https://linkedin.com/in/rodrigoalbuquerque)
-- **GitHub**: [github.com/rodrigoadr](https://github.com/rodrigoadr)
-- **Email**: rodrigo.rocha@email.com
-
-## 🔄 Sistema de Qualidade
-
-Este repositório utiliza automações para garantir qualidade do conteúdo:
-
-### Validação Automática
-- **GitHub Actions** verificam automaticamente se há TODOs ou PLACEHOLDERs pendentes
-- **Verificação de encoding** garante caracteres UTF-8 corretos
-- **Workflow de release** impede merges com conteúdo incompleto
-
-### Controle de Qualidade
-```yaml
-# Exemplo da verificação automática
-- ✅ Encoding UTF-8 verificado
-- ✅ TODOs/PLACEHOLDERs resolvidos  
-- ✅ Conteúdo pronto para produção
-```
-
-## 📜 Licença
-
-Este repositório contém informações pessoais e profissionais. O uso é livre para fins de referência e inspiração, mas as informações específicas são de propriedade do autor.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-rodrigoalbuquerque-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/rodrigoalbuquerque)
+[![GitHub](https://img.shields.io/badge/GitHub-rodrigoadr-181717?style=flat&logo=github)](https://github.com/rodrigoadr)
+[![Email](https://img.shields.io/badge/Email-rodrigo.adr%40gmail.com-EA4335?style=flat&logo=gmail)](mailto:rodrigo.adr@gmail.com)
 
 ---
 
-**Última atualização**: Outubro 2025  
-**Status**: ✅ Produção — Todos os TODOs foram resolvidos e o conteúdo está pronto para uso profissional
+```python
+class RodrigoRocha:
+
+    def __init__(self):
+        self.name           = 'Rodrigo Albuquerque da Rocha'
+        self.role           = 'Data Product Specialist'
+        self.location       = 'Florianópolis, SC — Brazil'
+        self.company        = 'Grupo Boticário'
+        self.experience     = '20+ years in Fortune 500'
+        self.education      = 'MBA in AI & Machine Learning (2024–2025)'
+        self.fields         = ['Data Products', 'Data Engineering', 'Machine Learning', 'Analytics & BI']
+        self.tools          = ['Apache Airflow', 'dbt', 'BigQuery', 'Spark', 'MLflow', 'QlikSense', 'Looker']
+        self.languages      = ['Python', 'SQL', 'Java', 'JavaScript']
+        self.cloud          = ['GCP', 'AWS', 'Azure']
+        self.human_langs    = {'Português': 'Nativo', 'English': 'Avançado', 'Español': 'Intermediário'}
+
+if __name__ == '__main__':
+    me = RodrigoRocha()
+```
+
+---
+
+## 📌 Minha Experiência
+
+| Período | Empresa | Papel |
+|---------|---------|-------|
+| 2023 – Presente | Grupo Boticário | Data Product Specialist |
+| 2017 – 2023 | Grupo Boticário | BT Domain Specialist |
+| 2015 – 2017 | BRF S.A. | Analytics & Gestão |
+| 2013 – 2017 | Positivo Informática | Analista de Sistemas |
+| 2012 – 2013 | Bematech / CINQ | Analistas |
+
+---
+
+## 🚀 Destaques de Impacto
+
+- **56 TB** de dados migrados com arquitetura medallion no GCP
+- **100 mil** funcionários impactados por automações de dados
+- **500** franqueados com acesso democratizado a análises em tempo real
+- **6 anos** de contribuição no Grupo Boticário — líder beauty tech LATAM
+- Integração de **15+ sistemas** em arquitetura orientada a dados
+
+---
+
+## 🗂️ Documentos deste repositório
+
+| Arquivo | Descrição |
+|---------|-----------|
+| [CV_Rodrigo_Rocha_PT.html](CV_Rodrigo_Rocha_PT.html) | CV completo — versão em Português 🇧🇷 |
+| [CV_Rodrigo_Rocha_EN.html](CV_Rodrigo_Rocha_EN.html) | CV completo — versão em Inglês 🇺🇸 |
+| [CV compilado (PT)](Meu_Perfil_Data_Product/CV_compilado.md) | Fonte Markdown em Português |
+| [CV compilado (EN)](Meu_Perfil_Data_Product/CV_compilado_en.md) | Markdown source in English |
+
+### 📂 Estrutura
+
+```
+├── CV_Rodrigo_Rocha_PT.html            # 🇧🇷 CV versão portuguesa
+├── CV_Rodrigo_Rocha_EN.html            # 🇺🇸 CV versão inglesa
+├── Meu_Perfil_Data_Product/
+│   ├── 01_Resumo_e_Skills/             # Resumo executivo e competências
+│   ├── 02_Experiencia_Profissional/    # Histórico detalhado
+│   ├── 03_Formacao_Academica/          # Formação e certificações
+│   ├── 04_Publicacoes_e_Projetos_Chave/# Portfólio técnico
+│   ├── CV_compilado.md                 # CV consolidado PT
+│   └── CV_compilado_en.md              # CV consolidado EN
+├── templates/
+│   └── cv-styles.css                   # Estilos profissionais
+└── generate-pdf-working.bat            # Script de geração
+```
+
+### 💡 Como gerar o PDF
+
+1. Abra `CV_Rodrigo_Rocha_PT.html` (ou EN) no navegador
+2. Pressione `Ctrl + P`
+3. Selecione **Salvar como PDF** — A4, margens padrão, sem cabeçalho/rodapé
+
+---
+
+**Última atualização**: Abril 2026 · **Status**: ✅ Pronto para Fortune 500 & Big Tech
