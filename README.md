@@ -3,7 +3,7 @@
 **Data Product Specialist** at Grupo Boticário, MBA in Artificial Intelligence & Machine Learning (Universidade Cruzeiro do Sul).
 Computer Science background from Universidade Federal do Paraná (UFPR). Previous experience as Domain Specialist — BT at Grupo Boticário, and Analytics & BI at BRF S.A.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-rodrigoalbuquerque-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/rodrigoalbuquerque)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-rodrocha-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/rodrocha)
 [![GitHub](https://img.shields.io/badge/GitHub-rodrigoadr-181717?style=flat&logo=github)](https://github.com/rodrigoadr)
 [![Email](https://img.shields.io/badge/Email-rodrigo.adr%40gmail.com-EA4335?style=flat&logo=gmail)](mailto:rodrigo.adr@gmail.com)
 
