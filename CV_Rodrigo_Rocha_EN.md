@@ -192,7 +192,7 @@ Junho 2005 – Outubro 2010 - Curitiba, Paraná
 
 **Planned Certifications:**
 
-Google Cloud Professional Data Engineer (Q1 2026)  
+Google Cloud Professional Data Engineer (Q2 2026)  
 Google Cloud Professional Cloud Architect (Q2 2026)  
 Project Management Professional (PMP) - PMI (Q3 2026)
 
