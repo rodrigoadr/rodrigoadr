@@ -11,6 +11,7 @@
 📱 **Mobile:** +55 41 988582931  
 ✉️ **Email:** rodrigo.adr@gmail.com  
 💼 **LinkedIn:** [www.linkedin.com/in/rodrocha](https://www.linkedin.com/in/rodrocha)  
+🌐 **Website:** [rodrigoadr.github.io](https://rodrigoadr.github.io/rodrigoadr/)  
 
 ---
 

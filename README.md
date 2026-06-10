@@ -6,6 +6,7 @@ Computer Science background from Universidade Federal do Paraná (UFPR). Previou
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rodrocha-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/rodrocha)
 [![GitHub](https://img.shields.io/badge/GitHub-rodrigoadr-181717?style=flat&logo=github)](https://github.com/rodrigoadr)
 [![Email](https://img.shields.io/badge/Email-rodrigo.adr%40gmail.com-EA4335?style=flat&logo=gmail)](mailto:rodrigo.adr@gmail.com)
+[![Website](https://img.shields.io/badge/Website-rodrigoadr.github.io-0ea5e9?style=flat&logo=github)](https://rodrigoadr.github.io/rodrigoadr/)
 
 ---
 
