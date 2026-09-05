@@ -15,7 +15,7 @@ class RodrigoRocha:
 
     def __init__(self):
         self.name           = 'Rodrigo Albuquerque da Rocha'
-        self.role           = 'Data Product Specialist'
+        self.role           = 'Analytics Engineer'
         self.location       = 'Florianópolis, SC — Brazil'
         self.company        = 'Grupo Boticário'
         self.experience     = '20+ years in Fortune 500'
