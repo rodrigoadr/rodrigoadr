@@ -1,6 +1,6 @@
 ﻿# Olá, eu sou o Rodrigo! 👋
 
-**Data Product Specialist** at Grupo Boticário, MBA in Artificial Intelligence & Machine Learning (Universidade Cruzeiro do Sul).
+**Analytics Engineer** at Grupo Boticário, MBA in Artificial Intelligence & Machine Learning (Universidade Cruzeiro do Sul).
 Computer Science background from Universidade Federal do Paraná (UFPR). Previous experience as Domain Specialist — BT at Grupo Boticário, and Analytics & BI at BRF S.A.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-rodrocha-0077B5?style=flat&logo=linkedin)](https://linkedin.com/in/rodrocha)
@@ -40,10 +40,10 @@ if __name__ == '__main__':
 
 | Período | Empresa | Papel |
 |---------|---------|-------|
-| 2023 – Presente | Grupo Boticário | Data Product Specialist |
-| 2017 – 2023 | Grupo Boticário | BT Domain Specialist |
-| 2015 – 2017 | BRF S.A. | Analytics & Gestão |
-| 2013 – 2017 | Positivo Informática | Analista de Sistemas |
+| 2023 – Presente | Grupo Boticário | Analytics Engineer |
+| 2019 – 2023 | Grupo Boticário | BT Domain Specialist |
+| 2015 – 2019 | BRF S.A. | Analytics & Gestão |
+| 2013 – 2015 | Positivo Informática | Analista de Sistemas |
 | 2012 – 2013 | Bematech / CINQ | Analistas |
 
 ---
